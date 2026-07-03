@@ -32,27 +32,9 @@ python -m venv venv
 venv\Scripts\activate  # On Windows
 pip install -r ../requirements.txt
 uvicorn main:app --reload
-
-# 🚀 Local Setup & Installation
-
-## Prerequisites
-
-- Node.js (v18+)
-- Python (3.11+) [^1]
-
-## 1. Backend Setup (FastAPI)
-
-Navigate to the `backend` directory, initialize your virtual environment, install the required packages, and run the server:
-
-```bash
-cd backend
-python -m venv venv
-venv\Scripts\activate  # On Windows
-pip install fastapi uvicorn pandas numpy xgboost scikit-learn openpyxl xlrd python-multipart
-uvicorn main:app --reload
 ```
 
-The API will be available at:
+## The API will be available at:
 
 ```
 http://127.0.0.1:8000
